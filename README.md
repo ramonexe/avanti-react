@@ -8,4 +8,4 @@ O objetivo deste projeto é demonstrar habilidades técnicas e práticas de dese
 
 ## Status do Projeto
 
-🚧 **Em desenvolvimento** 🚧
+✔️ **Concluído** ✔️
