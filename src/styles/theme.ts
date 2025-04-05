@@ -1,11 +1,10 @@
 export const theme = {
   colors: {
-    primary: '#FFB218',
+    primary: '#007bff',
     primaryHover: '#D98E04',
     backgroundLight: '#FFFBED',
     backgroundDark: '#0D0D0D',
-    text: '#333333',
-    disabled: '#D3D3D3',
+    text: '#fefefe',
   },
 } as const
 
