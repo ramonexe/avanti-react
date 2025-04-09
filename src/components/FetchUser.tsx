@@ -15,6 +15,11 @@ const FetchContainer = styled.div`
     background-color: ${(props) => props.theme.colors.backgroundDark};
     width: 50vw;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        width: 85vw;
+        padding: 20px;
+    }
 `;
 
 const ProfileContainer = styled.div`
@@ -24,9 +29,19 @@ const ProfileContainer = styled.div`
   border: 1px solid #ddd;
   border-radius: 24px;
   background-color: #dbdbdb;
-  min-width: 700px;
   margin: 0 auto;
-  width: fit-content;
+  width: 30vw;
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px;
+  }
 `;
 
 const Avatar = styled.img`
@@ -35,22 +50,47 @@ const Avatar = styled.img`
   border: 2px solid ${(props) => props.theme.colors.primary};
   border-radius: 50%;
   margin-right: 20px;
+
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 480px) {
+    width: 120px;
+    height: 120px;
+  }
 `;
 
 const ProfileDetails = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const Name = styled.h2`
   margin: 0;
   font-size: 24px;
   color: ${(props) => props.theme.colors.primary};
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
 
 const Bio = styled.p`
   font-size: 16px;
   color: #333;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const InputContainer = styled.div`
@@ -68,6 +108,12 @@ const Input = styled.input`
   border-radius: 8px;
   border: 1px solid #ddd;
   outline: none;
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    font-size: 14px;
+    height: 38px;
+  }
 `;
 
 const Title = styled.h1`
@@ -77,6 +123,14 @@ const Title = styled.h1`
   color: #fff;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
 `;
 
 const Highlight = styled.span`
@@ -107,6 +161,14 @@ const Button = styled.button`
   svg {
     font-size: 16px;
   }
+
+  @media (max-width: 480px) {
+    width: 32px;
+    height: 32px;
+    svg {
+      font-size: 14px;
+    }
+  }
 `;
 
 const ErrorMessage = styled.p`
@@ -116,6 +178,11 @@ const ErrorMessage = styled.p`
   color: red;
   font-size: 18px;
   text-align: center;
+
+  @media (max-width: 480px) {
+    padding: 20px;
+    font-size: 16px;
+  }
 `;
 
 const UserProfile: React.FC = () => {

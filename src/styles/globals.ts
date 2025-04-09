@@ -6,11 +6,8 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,rgb(32, 32, 32) 50%, #0a0f2c 100%);
-    background-attachment: fixed;
-    background-size: cover;
     color: #f3f3f3;
-
+    
     a {
       text-decoration: none;
     }
